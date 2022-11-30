@@ -11,6 +11,8 @@ spec:
       app: nodeapp
   template:
     metadata:
+      annotations:
+          'consul.hashicorp.com/connect-inject': 'true'
       labels:
         app: nodeapp 
     spec:
